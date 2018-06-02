@@ -16,6 +16,7 @@
     <!--<script async="" src="http://cse.google.com/adsense/search/async-ads.js"></script>-->
     <!--<script type="text/javascript" async="" src="https://cse.google.com/cse.js?cx=007093354832664985212:i29yqcdrrjs"></script>-->
     <script src="https://3967777.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
+    <script src="https://rawgit.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
     <script src="js/backgroundVideo.js"></script>
     <script>hsjQuery = window['jQuery'];</script>
     <link href="https://3967777.hs-sites.com/hs/hsstatic/content_shared_assets/static-1.4071/css/public_common.css"
@@ -1102,7 +1103,13 @@ $(function () {
     }
 </script>
 
-<iframe src="//widget.stapico.ru/?q=appxite&s=100&w=2&h=3&b=1&p=5&title=appxite&effect=0" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:250px; height: 490px" ></iframe> <!-- stapico - stapico.ru -->
+<script type="text/javascript">
+    var feed = new Instafeed({
+        clientId: '8fea698375e84b0ab6cf5e1675b8aed8',
+        accessToken: '7915424155.8fea698.038e9ac9ea76489abbc6164a3ce53eb3'
+    });
+    feed.run();
+</script>
 
 
 </body>
