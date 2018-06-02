@@ -14,7 +14,6 @@ $(function(){
     $('.instagram').spectragram('getUserFeed',{
         complete : null,
         max: 20,
-        query: "instagram",
         size: "medium",
         wrapEachWith: "<li></li>"
     });

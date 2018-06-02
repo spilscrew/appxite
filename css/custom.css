@@ -114,3 +114,45 @@ body.body--readable .readable-img-restrict:before {
 .photo-container > div {
     margin: 10px;
 }
+.team-member {
+    background-position: top !important;
+}
+.negative-margin-75 {
+    margin-top: -75px;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-conatiner > div {
+        flex: 1 0 50%;
+        max-width: calc(50% - 20px);
+    }
+    .team-hover {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .child-trigger i,
+    .child-trigger i:after {
+        background-color: white !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .readable-switcher,
+    .c-scroll-top.u-highest {
+        right: 20px;
+        left: auto;
+        width: 35px;
+        height: 35px;
+        background-size: 50%;
+        bottom: 20px;
+    }
+    .c-scroll-top.u-highest {
+        right: 70px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .flex-conatiner > div {
+        flex: 1 0 100%;
+        max-width: calc(100% - 20px);
+    }
+}
