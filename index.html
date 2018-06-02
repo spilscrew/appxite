@@ -1104,12 +1104,21 @@ $(function () {
 </script>
 
 <script type="text/javascript">
+
+    $.ajax({
+        method: "POST",
+        url: "https://api.instagram.com/oauth/authorize/?client_id=8fea698375e84b0ab6cf5e1675b8aed8&redirect_uri=https://www.instagram.com/appxite/&response_type=token",
+    }).done(function(msg) {
+        console.log(msg);
+    });
+
     var feed = new Instafeed({
         clientId: '8fea698375e84b0ab6cf5e1675b8aed8',
         accessToken: '7915424155.8fea698.038e9ac9ea76489abbc6164a3ce53eb3'
     });
     feed.run();
 </script>
+<div id="instafeed"></div>
 
 
 </body>
