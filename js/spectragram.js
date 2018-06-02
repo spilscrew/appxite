@@ -56,10 +56,6 @@ if ( typeof Object.create !== "function" ) {
 
 			self.fetch( endpoint ).done( function ( results ) {
 				var status = self.options.query || 'User';
-
-
-				console.log(results);
-
 				if ( results.data.length ) {
 					self.display( results );
 				} else {
