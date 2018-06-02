@@ -10,7 +10,7 @@ $(function(){
         $('body').toggleClass("body--readable");
     });
 
-    $.get( "https://instagram.com/p/appxite/media/?size=t", function( data ) {
+    $.get( "https://instagram.com/p/8fea698375e84b0ab6cf5e1675b8aed8/media/?size=t", function( data ) {
         console.log(data);
     });
 
