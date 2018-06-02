@@ -53,6 +53,11 @@ body.body--readable .readable-img-restrict:before {
     background-color: white !important;
     background-repeat: no-repeat !important;
 }
+.readable-switcher.active:hover,
+.c-scroll-top.u-highest.scroll-show:hover {
+    background-color: #e12426 !important;
+}
+
 .readable-switcher.active:hover {
     background-image: url('../images/light_off.svg') !important;
 }

@@ -15,13 +15,12 @@
 
     <!--<script async="" src="http://cse.google.com/adsense/search/async-ads.js"></script>-->
     <!--<script type="text/javascript" async="" src="https://cse.google.com/cse.js?cx=007093354832664985212:i29yqcdrrjs"></script>-->
-    <script src="https://3967777.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
-    <script src="https://rawgit.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/backgroundVideo.js"></script>
     <script>hsjQuery = window['jQuery'];</script>
+    <link href="css/custom.css" rel="stylesheet">
     <link href="https://3967777.hs-sites.com/hs/hsstatic/content_shared_assets/static-1.4071/css/public_common.css"
           rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
     <meta property="og:description" content="">
     <meta property="og:title" content="AppXite Leadership">
     <meta name="twitter:description" content="">
@@ -1070,13 +1069,21 @@ $(function () {
 </div><!--end footer wrapper -->
 
 <div class="readable-switcher"></div>
+<div class="readable-overlay"></div>
+<div class="instagram"></div>
 
 <script type="text/javascript"
         src="//3967777.hs-sites.com/hs/hsstatic/content_shared_assets/static-1.4071/js/public_common.js"></script>
 <script src="//3967777.hs-sites.com/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.2/bundles/project.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/spectragram.js"></script>
 
 <script>
+
+    jQuery.fn.spectragram.accessData = {
+        accessToken: '7915424155.8fea698.97bc3486df274c149ff6b0b5a39830ad'
+    };
+
     if (typeof hsVars !== 'undefined') {
         hsVars['language'] = 'en';
     }
@@ -1102,24 +1109,6 @@ $(function () {
         category_id: 1
     }
 </script>
-
-<script type="text/javascript">
-
-    $.ajax({
-        method: "POST",
-        url: "https://api.instagram.com/oauth/authorize/?client_id=8fea698375e84b0ab6cf5e1675b8aed8&redirect_uri=https://www.instagram.com/appxite/&response_type=token",
-    }).done(function(msg) {
-        console.log(msg);
-    });
-
-    var feed = new Instafeed({
-        clientId: '8fea698375e84b0ab6cf5e1675b8aed8',
-        accessToken: '7915424155.8fea698.038e9ac9ea76489abbc6164a3ce53eb3'
-    });
-    feed.run();
-</script>
-<div id="instafeed"></div>
-
 
 </body>
 </html>
