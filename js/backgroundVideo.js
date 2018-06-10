@@ -69,7 +69,7 @@
         
         } else {
             
-            console.log("Buffered is does not set.");
+            // console.log("Buffered is does not set.");
         
         }
 
