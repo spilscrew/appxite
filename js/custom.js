@@ -1,8 +1,9 @@
 $(function(){
 
     $(".c-hero--about--iframe").backgroundVideo({
-        mp4: "video/bg.mp4",
-        settingID: "c-hero--about--iframe--video"
+        mp4: "https://spilscrew.github.io/appxite.com/video/bg.mp4",
+        settingID: "c-hero--about--iframe--video",
+        poster: ""
     });
 
     $(".readable-switcher").click(function(){
