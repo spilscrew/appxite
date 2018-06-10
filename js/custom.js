@@ -1,7 +1,8 @@
 $(function(){
 
     $(".c-hero--about--iframe").backgroundVideo({
-        poster: false,
+        buffered: false,
+        poster: "",
         settingID: "c-hero--about--iframe--video",
         mpeg: "https://spilscrew.github.io/appxite.com/video/bg.mpg",
         mp4: "https://spilscrew.github.io/appxite.com/video/bg.mp4",
