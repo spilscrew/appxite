@@ -2,7 +2,7 @@ $(function(){
 
     $(".c-hero--about--iframe").backgroundVideo({
         buffered: false,
-        poster: "https://spilscrew.github.io/appxite.com/images/poster.jpeg",
+        poster: "",
         settingID: "c-hero--about--iframe--video",
         mpeg: "https://spilscrew.github.io/appxite.com/video/bg.mpg",
         mp4: "https://spilscrew.github.io/appxite.com/video/bg.mp4",
