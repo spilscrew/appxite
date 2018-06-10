@@ -31,7 +31,7 @@
 
         }, options);
 
-        this.append('<video muted="true" id=' + settings.settingID + '></video>');
+        this.append('<video autoplay loop muted playsinline id=' + settings.settingID + '></video>');
 
         if (settings.autoplay == true) {
             
