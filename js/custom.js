@@ -19,11 +19,25 @@ $(function(){
         $('body').toggleClass("body--readable");
     });
 
+    var Spectra = {
+        instaToken: '2136707.12e2743.9576ae17af4e4ad4aebf6b72433c01fd',
+        // instaToken: '7915424155.5e00515.79645427142949e39191910efe13b264',
+        instaID: '5e00515adef64fae9943e392b327daba',
 
-    // $('.instagram').spectragram('getUserFeed',{
-    //     complete : null,
-    //     max: 20,
-    //     size: "medium",
-    //     wrapEachWith: "<li></li>"
-    // });
+        init: function () {
+            $.fn.spectragram.accessData = {
+                accessToken: this.instaToken,
+                clientID: this.instaID
+            };
+
+            $('.instagram-feed').spectragram('getUserFeed',{
+                max: 6,
+                wrapEachWith: '<div class="instagram-photo">'
+            });
+        }
+
+    };
+
+    Spectra.init();
+
 });

@@ -120,6 +120,16 @@ body.body--readable .readable-img-restrict:before {
 .negative-margin-75 {
     margin-top: -75px;
 }
+.instagram-photo {
+    display: inline-block;
+    width: 33%;
+}
+.instagram-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
 
 @media screen and (max-width: 1024px) {
     .flex-conatiner > div {
