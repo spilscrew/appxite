@@ -129,6 +129,15 @@ body.body--readable .readable-img-restrict:before {
     height: 100% !important;
     padding-bottom: 5px;
     padding-right: 5px;
+    opacity: 0.5;
+}
+.play-video {
+    font-size: 14px;
+    color: black;
+    z-index: 11111;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {

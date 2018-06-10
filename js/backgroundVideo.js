@@ -3,7 +3,7 @@
     $.fn.backgroundVideo = function (options) {
 
         var settings = $.extend({
-            autoplay: true,
+            autoplay: false,
             controls: false,
             //height: false,
             //width: false,
@@ -31,7 +31,7 @@
 
         }, options);
 
-        this.append('<video id=' + settings.settingID + '></video>');
+        this.append('<video muted="true" id=' + settings.settingID + '></video>');
 
         if (settings.autoplay == true) {
             
