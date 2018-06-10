@@ -15,7 +15,7 @@ $(function(){
         rtf: false
     });
 
-    // document.querySelector[0].play();
+    document.querySelector('#c-hero--about--iframe--video').play();
 
     $(".readable-switcher").click(function(){
         $(this).toggleClass('active');
