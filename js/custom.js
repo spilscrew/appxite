@@ -1,6 +1,5 @@
 $(function(){
 
-
     $(".c-hero--about--iframe").backgroundVideo({
         autoplay: false,
         buffered: false,
@@ -16,7 +15,7 @@ $(function(){
         rtf: false
     });
 
-    var playPromise = $("#c-hero--about--iframe--video")[0].play();
+    $("#c-hero--about--iframe--video")[0].play();
 
     $(".readable-switcher").click(function(){
         $(this).toggleClass('active');
